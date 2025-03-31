@@ -1,0 +1,180 @@
+body {
+    display: flex;
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center;  /* Centra verticalmente */
+    height: 100vh;  /* Usa toda la altura de la pantalla */
+    margin: 0;
+    padding: 20px;
+    background-color: #000 ;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+.box {
+    width: fit-content;
+    margin: auto;
+    padding: 20px 0;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.295) 0px 5px 3px 0px;
+}
+
+
+.box h1 {
+    text-align: center;
+    color: #333333;
+    font-size: 24px;
+    margin-bottom: 30px;
+    border-bottom: solid 1px #ccc;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    padding: 0 20px;
+    flex-direction: column;
+    margin-bottom: 15px;
+    /* width: fit-content;*/
+}
+
+.document{
+    display: flex;
+    margin : 10px 10px;
+    justify-content: space-between;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333333;
+}
+
+.document input {
+    padding: 5px;
+    width: 70%;
+    border: 1px solid #a1a1a1;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+input, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: transparent;
+    font-size: 14px;
+}
+
+input:focus, select:focus {
+    outline: none;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px
+}
+
+.input-group select {
+    width: 35%;
+}
+
+.input-group input {
+    width: 65%;
+}
+
+.group-button {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+    padding: 0 20px;
+    /* width: 100%; */
+    gap: 10px;
+}
+#group-button-secondary{
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+    margin: 10px 0px;
+    gap: 10px;
+}
+
+#group-button-secondary button {
+    width: 100%;
+}
+
+.group-button-register button {
+    width: 100%;
+    margin-top: 25px
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    width:50%;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+#btn-login, .back {
+    background-color:  #ab3ed8;
+}
+
+#btn-login:hover {
+    background-color: #d86aff;
+}
+
+#btn-register, #btn-register-login, #btn-send-email, #btn-send-token, #btn-send-new-password{
+    background-color: #00a8e8;
+}
+
+#btn-register, #btn-register-login, #btn-send-email, #btn-send-token, #btn-send-new-password:hover {
+    background-color: #0085b9;
+}
+
+#btn-forgot-password {
+    background-color: #009929;
+}
+
+#btn-forgot-password:hover {
+    background-color: #007a1f;
+}
+
+#btn-log-out {
+    background-color: #fc4b08;
+}
+
+#btn-log-out:hover {
+    background-color: #ff7c39;
+}
+
+.hidden {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.visible {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#rol-usurio {
+    width: 100%; /* Hace que el select de cargo ocupe todo el ancho disponible */
+}
+
+#container-log {
+    display: flex;
+    flex-direction: column;
+    width: 3in;
+    text-align: center;
+    align-items: center;
+}

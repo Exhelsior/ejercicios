@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Evaluation</title>
+</head>
+<body>
+    <div id="box-temp" class="box">
+    </div>
+    <template id="template-login">
+        <h1>LOGIN</h1>
+        <form id="login-form">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="group-button">
+                <button class="btn" id="btn-login" type="button">Log In</button>
+                <button class="btn" id="btn-register-login" type="button">Create Account</button>
+            </div>
+            <div id="group-button-secondary">
+                <button class="btn" id="btn-forgot-password" type="button">
+                    Forgot Password
+                </button>
+            </div>
+        </form>
+    </template>
+    <template id="stemplate-register" >
+        <h1>CREATE ACCOUNT</h1>
+        <form id="register-form">
+            <div class="form-group">
+                <label for="full-name">Name</label>
+                <input type="text" id="full-name" name="full-name" required>
+            </div>
+            <div class="form-group">
+                <label for="email-register">Email</label>
+                <input type="email" id="email-register" name="email-register" required>
+            </div>
+            <div class="form-group">
+                <label for="type-document">Document</label>
+                <div class="input-group">
+                    <select id="type-document" name="type-document" required>
+                        <option value="CC">CC</option>
+                        <option value="TI">TI</option>
+                        <option value="CE">CE</option>
+                        <option value="NIT">NIT</option>
+                    </select>
+                    <input type="text" id="document" name="document" required placeholder="Enter document number">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="rol-usurio">Cargo</label>
+                <div class="input-group">
+                    <select id="rol-usurio" name="rol-usurio" required>
+                        <option value="1">Administrador</option>
+                        <option value="2">Usuario</option>
+                        <option value="3">Editor</option>
+                        <option value="4">Moderador</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password-register">Password</label>
+                <input type="password" id="password-register" name="password-register" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            <div class="group-button">
+                <button class="btn" id="btn-register" type="button">Create Account</button>
+                <button class="btn back" id="btn-back-login" type="button">Back</button>
+            </div>
+        </form>
+    </template>
+
+    <template id="template-passrecovery">
+        <h1>FIND YOUR ACCOUNT</h1>
+        <div class="form-group">
+            <p>Please enter your email to search for your account.</p>
+            <input id="email-recovery" type="email" placeholder="Email">
+        </div>
+        <div class="group-button">
+            <button class="btn" id="btn-send-email">Send</button>
+            <button class="btn back" id="btn-back-login">Back</button>
+        </div>
+    </template>
+
+    <template id="template-token">
+        <h1>ENTER THE CODE</h1>
+        <div class="form-group">
+            <p>Please, check your email and enter the code you received.</p>
+            <input id="token" type="text" placeholder="Code">
+        </div>
+        <div class="group-button">
+            <button class="btn" id="btn-send-token">Send</button>
+            <button class="btn back" id="btn-back-pass-recovery">Back</button>
+        </div>
+    </template>
+
+    <template id="template-resset">
+        <h1>RESET PASSWORD</h1>
+        <form action="" id="resset-form">
+            <div class="form-group">
+                <p>Please, enter your new password.</p>
+                <label for="new-password">New password</label>
+                <input id="new-password" type="password">
+            </div>
+            <div class="form-group">
+                <label for="confirm-new-password">Confirm password</label>
+                <input id="confirm-new-password" type="password">
+            </div>
+            <div class="group-button">
+                <button type="button" class="btn back" id="btn-send-new-password">Send</button>
+                <button type="button" class="btn back" id="btn-back-token">Back</button>
+            </div>
+        </form>
+    </template>
+
+    <template id="template-log-content">
+        <div id="container-log">
+            <h2>
+                Lo lograse que bueno eres 😎😆
+            </h2>
+            <button id="btn-log-out" class="btn">¡¡SALIR!!</button>
+        </div>
+    </template>
+    <script src="./view/view.js"></script>
+    <script type="module" src="./controller_front/controller.js"></script>
+</body>
+</html>
